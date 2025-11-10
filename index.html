@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModBlue - Planejamento Estratégico 2026 para Escritórios de Arquitetura</title>
+    <meta name="description" content="Transforme seu escritório de arquitetura em uma organização profissional com o Planejamento Estratégico 2026 da ModBlue. Metodologia comprovada para crescimento sustentável.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="planejamento estratégico, escritório arquitetura, consultoria empresarial, gestão escritório, ModBlue">
+    <meta name="author" content="ModBlue">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com.br/">
+    <meta property="og:title" content="ModBlue - Planejamento Estratégico 2026">
+    <meta property="og:description" content="Transforme seu escritório de arquitetura em uma organização profissional">
+    <meta property="og:image" content="https://seudominio.com.br/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://seudominio.com.br/">
+    <meta property="twitter:title" content="ModBlue - Planejamento Estratégico 2026">
+    <meta property="twitter:description" content="Transforme seu escritório de arquitetura em uma organização profissional">
+    <meta property="twitter:image" content="https://seudominio.com.br/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+        }
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+        .animate-bounce {
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8,0,1,1); }
+            50% { transform: none; animation-timing-function: cubic-bezier(0,0,0.2,1); }
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            z-index: 9999;
+            transition: width 0.3s ease;
+        }
+        
+        /* WhatsApp Button Animation */
+        .whatsapp-btn {
+            animation: whatsappPulse 2s infinite;
+        }
+        
+        @keyframes whatsappPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen gradient-bg">
+    
+    <!-- Progress Bar -->
+    <div id="progress-bar" class="progress-bar"></div>
+
+    <!-- Black Friday Banner -->
+    <div class="bg-black text-yellow-400 py-3 px-4 text-center border-b-2 border-yellow-400 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-red-600/20 to-yellow-600/20 animate-pulse"></div>
+        <div class="container mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <p class="font-bold text-lg animate-bounce">
+                    🔥 BLACK FRIDAY 2024 🔥 | Desconto Especial no Planejamento Estratégico 2026
+                </p>
+                <div class="flex items-center gap-2 text-sm bg-red-600 px-3 py-1 rounded-full">
+                    <i data-lucide="clock" class="h-4 w-4"></i>
+                    <span id="countdown">Termina em: 2d 14h 30m 0s</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-1 z-40">
+        <div class="container mx-auto px-4 py-3 md:py-4">
+            <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center space-x-3">
+                    <div class="text-2xl font-bold text-blue-600">ModBlue</div>
+                    <div class="hidden md:flex items-center gap-4 ml-8">
+                        <button onclick="scrollToSection('methodology-section')" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            Metodologia
+                        </button>
+                        <button onclick="scrollToSection('testimonials')" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            Casos de Sucesso
+                        </button>
+                        <button onclick="scrollToSection('faq')" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            FAQ
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="hidden lg:flex items-center gap-2 text-sm text-gray-600 mr-4">
+                        <i data-lucide="eye" class="h-4 w-4"></i>
+                        <span id="page-views">1247 visualizações</span>
+                        <i data-lucide="thumbs-up" class="h-4 w-4 ml-2"></i>
+                        <span>89 conversões</span>
+                    </div>
+                    <button onclick="scrollToSection('lead-form')" class="hidden md:flex border border-gray-300 text-gray-700 hover:bg-gray-50 px-4 py-2 rounded-md text-sm transition-colors">
+                        <i data-lucide="download" class="h-4 w-4 mr-2"></i>
+                        Material Gratuito
+                    </button>
+                    <button onclick="openWhatsApp()" class="bg-green-600 hover:bg-green-700 text-white text-sm md:text-base px-3 md:px-4 py-2 rounded-md flex items-center transition-colors">
+                        <i data-lucide="phone" class="h-4 w-4 mr-1 md:mr-2"></i>
+                        <span class="hidden sm:inline">Falar no </span>WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
+        <div class="container mx-auto text-center relative z-10">
+            <span class="inline-block mb-6 bg-blue-100 text-blue-800 px-6 py-2 rounded-full text-sm font-medium animate-pulse">
+                <i data-lucide="rocket" class="h-4 w-4 mr-2 inline"></i>
+                PLANEJAMENTO ESTRATÉGICO 2026
+            </span>
+            
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                TRANSFORME SEU ESCRITÓRIO DE ARQUITETURA EM UMA
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> ORGANIZAÇÃO PROFISSIONAL</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+                Mais do que um plano anual, é um sistema de direção estratégica que conecta visão, metas, pessoas, processos e resultados em um modelo de gestão contínua.
+            </p>
+            
+            <!-- Social Proof -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <div class="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-full shadow-sm border">
+                    <div class="flex">
+                        <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                    </div>
+                    <span class="text-sm font-medium">4.9/5 • 127 avaliações</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-full shadow-sm border">
+                    <i data-lucide="users" class="h-4 w-4 text-blue-600"></i>
+                    <span class="text-sm font-medium">+50 Empresas Transformadas</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-full shadow-sm border">
+                    <i data-lucide="shield" class="h-4 w-4 text-green-600"></i>
+                    <span class="text-sm font-medium">Garantia 30 dias</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-full shadow-sm border">
+                    <i data-lucide="bar-chart-3" class="h-4 w-4 text-purple-600"></i>
+                    <span class="text-sm font-medium">ROI médio: 340%</span>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <button onclick="openWhatsApp()" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <i data-lucide="zap" class="h-5 w-5 mr-2 inline"></i>
+                    Quero Transformar Meu Escritório
+                    <i data-lucide="arrow-right" class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform inline"></i>
+                </button>
+                <button onclick="scrollToSection('methodology-section')" class="border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 px-8 py-4 text-lg font-medium rounded-md group transition-colors">
+                    <i data-lucide="eye" class="h-5 w-5 mr-2 inline"></i>
+                    Conhecer a Metodologia
+                    <i data-lucide="arrow-right" class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform inline"></i>
+                </button>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-blue-600">+10</div>
+                    <div class="text-sm text-gray-600">Anos de Experiência</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-green-600">R$ 20M+</div>
+                    <div class="text-sm text-gray-600">Faturamento Gerado</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-purple-600">95%</div>
+                    <div class="text-sm text-gray-600">Taxa de Sucesso</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-orange-600">11 sem</div>
+                    <div class="text-sm text-gray-600">Duração do Programa</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form -->
+    <section id="lead-form" class="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white relative overflow-hidden">
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-yellow-400 text-black mb-4 px-4 py-2 rounded-full font-medium">
+                    <i data-lucide="download" class="h-4 w-4 mr-2 inline"></i>
+                    MATERIAL EXCLUSIVO
+                </div>
+                <h2 class="text-4xl font-bold mb-4">RECEBA GRATUITAMENTE</h2>
+                <p class="text-xl text-blue-100">Kit Completo: "Os 7 Pilares de um Escritório de Arquitetura Bem-Sucedido"</p>
+                <div class="mt-4 text-sm text-blue-200">
+                    ⚡ Download imediato • 📊 Planilhas prontas • 🎯 Checklist completo
+                </div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold mb-6">O que você vai receber:</h3>
+                    <div class="grid gap-4">
+                        <div class="flex items-start gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+                            <i data-lucide="check-circle" class="h-6 w-6 text-green-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Diagnóstico Empresarial Completo</h4>
+                                <p class="text-blue-100 text-sm">Checklist com 47 pontos para avaliar seu escritório</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+                            <i data-lucide="check-circle" class="h-6 w-6 text-green-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Planilha de Controle Financeiro</h4>
+                                <p class="text-blue-100 text-sm">Dashboard completo para acompanhar receitas e custos</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+                            <i data-lucide="check-circle" class="h-6 w-6 text-green-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Template de Planejamento Estratégico</h4>
+                                <p class="text-blue-100 text-sm">Modelo pronto para criar seu plano de 12 meses</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+                            <i data-lucide="check-circle" class="h-6 w-6 text-green-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Webinar Exclusivo (60 min)</h4>
+                                <p class="text-blue-100 text-sm">"Como Dobrar o Faturamento em 12 Meses"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-2xl">
+                    <form id="leadForm" class="space-y-6">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Baixe Agora Gratuitamente</h3>
+                            <p class="text-gray-600">Preencha os dados abaixo para receber o material</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Seu nome completo"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            />
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="seu@email.com"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            />
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="(11) 99999-9999"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            />
+                            <select id="company-size" class="w-full px-4 py-3 border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Selecione o tamanho da sua equipe</option>
+                                <option value="1-5">1-5 pessoas</option>
+                                <option value="6-15">6-15 pessoas</option>
+                                <option value="16-30">16-30 pessoas</option>
+                                <option value="30+">Mais de 30 pessoas</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                            <i data-lucide="download" class="mr-2 h-5 w-5 inline"></i>
+                            BAIXAR MATERIAL GRATUITO AGORA
+                        </button>
+                        
+                        <div class="text-center">
+                            <p class="text-xs text-gray-600 flex items-center justify-center gap-2">
+                                <i data-lucide="shield" class="h-4 w-4"></i>
+                                Seus dados estão seguros. Não enviamos spam.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology-section" class="py-20 px-4 bg-blue-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-blue-100 text-blue-800 mb-4 px-4 py-2 rounded-full font-medium">
+                    <i data-lucide="target" class="h-4 w-4 mr-2 inline"></i>
+                    METODOLOGIA COMPROVADA
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">NOSSA METODOLOGIA</h2>
+                <p class="text-xl text-gray-600">6 macro etapas que combinam estratégia, análise e execução</p>
+                <div class="mt-4 text-sm text-blue-600">
+                    Mais de 10 anos de experiência e +50M em faturamento gerado para nossos clientes.
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mr-4">1</div>
+                        <div>
+                            <h3 class="text-lg font-bold">Diagnóstico e Direcionamento</h3>
+                            <p class="text-sm text-blue-600 font-medium">2 semanas</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Análise profunda da situação atual e definição de visão e propósito</p>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Relatório de diagnóstico</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Matriz SWOT</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Definição de visão e missão</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mr-4">2</div>
+                        <div>
+                            <h3 class="text-lg font-bold">Planejamento Estratégico</h3>
+                            <p class="text-sm text-blue-600 font-medium">2 semanas</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Construção do plano estratégico com metas e indicadores</p>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Plano estratégico completo</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Definição de KPIs</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Cronograma de implementação</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mr-4">3</div>
+                        <div>
+                            <h3 class="text-lg font-bold">Implementação</h3>
+                            <p class="text-sm text-blue-600 font-medium">7 semanas</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Execução do plano com acompanhamento semanal</p>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Reuniões semanais</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Relatórios de progresso</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Ajustes estratégicos</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mr-4">4</div>
+                        <div>
+                            <h3 class="text-lg font-bold">Estruturação Comercial</h3>
+                            <p class="text-sm text-blue-600 font-medium">2 semanas</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Organização do funil comercial e processos de vendas</p>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Funil de vendas</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Processo comercial</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Treinamento de equipe</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mr-4">5</div>
+                        <div>
+                            <h3 class="text-lg font-bold">Gestão Financeira</h3>
+                            <p class="text-sm text-blue-600 font-medium">2 semanas</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Controles financeiros e otimização de resultados</p>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Controles financeiros</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Análise de rentabilidade</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Dashboards gerenciais</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mr-4">6</div>
+                        <div>
+                            <h3 class="text-lg font-bold">Acompanhamento</h3>
+                            <p class="text-sm text-blue-600 font-medium">12 meses</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Monitoramento contínuo e ajustes estratégicos</p>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Reuniões mensais</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Relatórios de performance</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>Suporte contínuo</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <div class="bg-white p-8 rounded-2xl shadow-lg max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Cronograma Completo do Programa</h3>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div class="p-4 bg-blue-50 rounded-lg">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">11</div>
+                            <div class="text-sm text-gray-600">Semanas de Programa</div>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-lg">
+                            <div class="text-3xl font-bold text-green-600 mb-2">12</div>
+                            <div class="text-sm text-gray-600">Meses de Acompanhamento</div>
+                        </div>
+                        <div class="p-4 bg-purple-50 rounded-lg">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">24/7</div>
+                            <div class="text-sm text-gray-600">Suporte Disponível</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <button onclick="openWhatsApp()" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-md font-medium">
+                            <i data-lucide="message-square" class="mr-2 h-5 w-5 inline"></i>
+                            Quero Conhecer Mais Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">CASOS DE SUCESSO REAIS</h2>
+                <p class="text-xl text-gray-600">Veja os resultados de quem já transformou seu escritório</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg border hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i data-lucide="user" class="h-8 w-8 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-900">Liê Arquitetas</h4>
+                            <p class="text-sm text-gray-600">Liê Arquitetas</p>
+                            <div class="flex items-center mt-1">
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "A ModBlue transformou completamente nossa gestão. Conseguimos organizar nossos processos e aumentar nossa margem de lucro significativamente."
+                    </blockquote>
+                    
+                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg mb-4">
+                        <p class="font-bold text-green-700 text-center">Aumento de 45% na margem de lucro</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <div class="bg-gray-50 p-2 rounded text-center">
+                            <div class="text-xs text-gray-500">Antes</div>
+                            <div class="font-semibold">R$ 80k/mês</div>
+                        </div>
+                        <div class="bg-blue-50 p-2 rounded text-center">
+                            <div class="text-xs text-blue-500">Depois</div>
+                            <div class="font-semibold text-blue-600">R$ 145k/mês</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg border hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i data-lucide="user" class="h-8 w-8 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-900">Studio WT</h4>
+                            <p class="text-sm text-gray-600">Studio WT</p>
+                            <div class="flex items-center mt-1">
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "O programa de planejamento estratégico nos deu clareza sobre nossos objetivos e como alcançá-los. Recomendo para qualquer escritório que quer crescer de forma sustentável."
+                    </blockquote>
+                    
+                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg mb-4">
+                        <p class="font-bold text-green-700 text-center">Crescimento de 60% em 8 meses</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <div class="bg-gray-50 p-2 rounded text-center">
+                            <div class="text-xs text-gray-500">Antes</div>
+                            <div class="font-semibold">R$ 120k/mês</div>
+                        </div>
+                        <div class="bg-blue-50 p-2 rounded text-center">
+                            <div class="text-xs text-blue-500">Depois</div>
+                            <div class="font-semibold text-blue-600">R$ 192k/mês</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg border hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i data-lucide="user" class="h-8 w-8 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-900">Tatiana Grell</h4>
+                            <p class="text-sm text-gray-600">Studio Grell</p>
+                            <div class="flex items-center mt-1">
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                                <i data-lucide="star" class="h-4 w-4 text-yellow-500 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "A metodologia da ModBlue é realmente eficaz. Em poucos meses conseguimos estruturar melhor nosso escritório e aumentar significativamente nosso faturamento."
+                    </blockquote>
+                    
+                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg mb-4">
+                        <p class="font-bold text-green-700 text-center">Estruturação completa + 35% faturamento</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <div class="bg-gray-50 p-2 rounded text-center">
+                            <div class="text-xs text-gray-500">Antes</div>
+                            <div class="font-semibold">R$ 95k/mês</div>
+                        </div>
+                        <div class="bg-blue-50 p-2 rounded text-center">
+                            <div class="text-xs text-blue-500">Depois</div>
+                            <div class="font-semibold text-blue-600">R$ 128k/mês</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="container mx-auto text-center relative z-10">
+            <h2 class="text-5xl font-bold mb-6">
+                PRONTO PARA TRANSFORMAR SEU ESCRITÓRIO?
+            </h2>
+            <p class="text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                Não deixe seu escritório continuar operando de forma amadora. 
+                Entre em contato conosco e descubra como o Planejamento Estratégico 2026 pode revolucionar seu negócio.
+            </p>
+            
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto mb-8">
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">+340%</div>
+                        <p class="text-sm">ROI Médio dos Clientes</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">11 sem</div>
+                        <p class="text-sm">Para Transformação Completa</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">95%</div>
+                        <p class="text-sm">Taxa de Satisfação</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+                <button onclick="openWhatsApp()" class="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-12 py-6 text-xl font-bold rounded-md shadow-2xl hover:shadow-3xl transition-all duration-300 group">
+                    <i data-lucide="phone" class="h-6 w-6 mr-3 inline"></i>
+                    FALAR COM ESPECIALISTA AGORA
+                    <i data-lucide="arrow-right" class="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform inline"></i>
+                </button>
+                <button onclick="scrollToSection('lead-form')" class="bg-white/10 border-2 border-white text-white hover:bg-white hover:text-blue-600 px-12 py-6 text-xl font-bold rounded-md transition-colors">
+                    <i data-lucide="download" class="h-6 w-6 mr-3 inline"></i>
+                    MATERIAL GRATUITO PRIMEIRO
+                </button>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6 text-sm">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="shield" class="h-5 w-5"></i>
+                    <span>Garantia de 30 dias</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="clock" class="h-5 w-5"></i>
+                    <span>Resposta em até 2h</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                    <span>4.9/5 de satisfação</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="users" class="h-5 w-5"></i>
+                    <span>+50 empresas transformadas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 bg-white">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">ENTRE EM CONTATO</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="h-5 w-5 text-blue-600"></i>
+                            <span class="text-gray-700">+55 61 9221-9268</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="map-pin" class="h-5 w-5 text-blue-600"></i>
+                            <span class="text-gray-700">Brasília - DF, Plaza Shopping, Torre B, Salas 1212 a 1218</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <div class="text-2xl font-bold text-blue-600 mb-4">ModBlue</div>
+                    <p class="text-gray-600 mb-2">Transformando escritórios de arquitetura em organizações profissionais</p>
+                    <p class="text-sm text-gray-500">
+                        &copy; 2025 ModBlue. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="openWhatsApp()" class="whatsapp-btn rounded-full w-16 h-16 bg-green-600 hover:bg-green-700 shadow-2xl hover:shadow-3xl transition-all duration-300 group" title="Falar no WhatsApp">
+            <i data-lucide="phone" class="h-8 w-8 text-white group-hover:scale-110 transition-transform"></i>
+        </button>
+    </div>
+
+    <!-- WhatsApp Tooltip -->
+    <div class="fixed bottom-24 right-4 z-40 bg-white px-4 py-2 rounded-lg shadow-lg border border-gray-200 text-sm text-gray-700 animate-bounce">
+        <div class="flex items-center gap-2">
+            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span class="font-medium">Fale conosco agora!</span>
+        </div>
+        <div class="absolute bottom-0 right-6 transform translate-y-1">
+            <div class="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-white"></div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Countdown timer
+        let timeLeft = {
+            days: 2,
+            hours: 14,
+            minutes: 30,
+            seconds: 0
+        };
+
+        function updateCountdown() {
+            if (timeLeft.seconds > 0) {
+                timeLeft.seconds--;
+            } else if (timeLeft.minutes > 0) {
+                timeLeft.minutes--;
+                timeLeft.seconds = 59;
+            } else if (timeLeft.hours > 0) {
+                timeLeft.hours--;
+                timeLeft.minutes = 59;
+                timeLeft.seconds = 59;
+            } else if (timeLeft.days > 0) {
+                timeLeft.days--;
+                timeLeft.hours = 23;
+                timeLeft.minutes = 59;
+                timeLeft.seconds = 59;
+            }
+
+            const countdownText = `${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`;
+            document.getElementById('countdown').textContent = `Termina em: ${countdownText}`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        
+        // Scroll progress
+        window.addEventListener('scroll', function() {
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (window.scrollY / totalHeight) * 100;
+            document.getElementById('progress-bar').style.width = Math.min(progress, 100) + '%';
+        });
+        
+        // WhatsApp function
+        function openWhatsApp() {
+            const name = document.getElementById('name')?.value || '';
+            const email = document.getElementById('email')?.value || '';
+            const phone = document.getElementById('phone')?.value || '';
+            const companySize = document.getElementById('company-size')?.value || '';
+            
+            const message = `Olá! Tenho interesse no Planejamento Estratégico 2026.
+
+Informações:
+- Nome: ${name || 'Não informado'}
+- Email: ${email || 'Não informado'}
+- Telefone: ${phone || 'Não informado'}
+- Tamanho da empresa: ${companySize || 'Não informado'}`;
+            
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/556192219268?text=${encodedMessage}`, "_blank");
+        }
+        
+        // Smooth scroll function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        // Page views counter
+        let pageViews = parseInt(localStorage.getItem('modblue_page_views') || '1247');
+        pageViews++;
+        localStorage.setItem('modblue_page_views', pageViews.toString());
+        document.getElementById('page-views').textContent = `${pageViews} visualizações`;
+        
+        // Form submission
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const companySize = document.getElementById('company-size').value;
+            
+            if (!name || !email) {
+                alert('Por favor, preencha nome e email.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert(`Obrigado ${name}! Enviaremos o material para ${email}.`);
+            
+            // Reset form
+            document.getElementById('leadForm').reset();
+            
+            // Auto open WhatsApp after form submission
+            setTimeout(() => {
+                openWhatsApp();
+            }, 1000);
+        });
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.hover-scale, .bg-white');
+            fadeElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
